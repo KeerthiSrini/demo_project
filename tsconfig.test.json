@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es6"],
+        "allowJs": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "noEmitOnError": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "typeRoots": ["./node_modules/@types"],
+        "types": ["node"],
+        "baseUrl": ".",
+        "paths": {
+            "@middlewares": ["./src/middlewares/index.ts"],
+            "@src/*": ["./src/*"],
+            "@helpers/*": ["./src/helpers/*"],
+            "@logger": ["./src/utils/logger.ts"],
+            "@express-types": ["./src/types/index.ts"]
+        }
+    },
+    "include": ["./src/**/*"]
+}
